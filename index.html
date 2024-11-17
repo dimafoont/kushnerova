@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -10,8 +11,10 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="logo"></div>
+        <div class="container header-wrapper">
+            <div class="logo">
+                <a href="/">Інформаційний портал</a>
+            </div>
             <nav class="menu-container">
                 <ul class="main-menu">
                     <li class="menu-item">
@@ -25,9 +28,18 @@
                     </li>
                 </ul>
             </nav>
-            <div class="search"></div>
-            <div class="mobile-menu-button"></div>
+            <div class="search">
+                <img class="search-icon-hidden" src="img/search.png" alt="search icon active">
+                <input class="search-input" type="text" placeholder="Що ви шукаєте?">
+                <img class="main-icon" src="img/search.png" alt="search icon">
+                <div class="close-icon">X</div>
+            </div>
+            <div class="mobile-menu-button">
+                <img src="img/menu.png" alt="mobile menu button">
+            </div>
         </div>
     </header>
+    <div class="overlay"></div>
+    <script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>
