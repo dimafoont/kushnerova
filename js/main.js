@@ -25,7 +25,6 @@ searchBtn.addEventListener('click', () => {
     divSpanClose.style.display = 'flex';
 });
 
-console.log(divSpanClose)
 divSpanClose.addEventListener('click', (event) => {
     event.stopPropagation();
     searchImg.style.display = 'block';
@@ -54,6 +53,13 @@ mobileMenuBtn.addEventListener('click', () => {
     } else {
         overlay.classList.add('visible');
         mainMenu.classList.add('visible');
+    }
+})
+
+overlay.addEventListener('click', () => {
+    if (overlay.classList.contains('visible')) {
+        overlay.classList.remove('visible');
+        mainMenu.classList.remove('visible');
     }
 })
 
